@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script>
+function VeziViitor() {
+document.getElementById("numeProfil").innerHTML="Inginer Gogoasa Dimitriana"; 
+document.getElementById("pozaProfil").src="imagini/img1.jpg";
+document.getElementById("tabelEducatie").innerHTML="Voluntariat";
+document.getElementById("pozaProfil").style.opacity="0.8";
+document.getElementById("pozaProfil").style.padding="1px";
+document.getElementById("back").style.backgroundColor="	#FFA07A";
+}
+function mouseOver() {
+  document.getElementById("demo").innerHTML = "20 ani";
+}
+
+function mouseOut() {
+  document.getElementById("demo").innerHTML="1999";
+}
+</script>
+<title>Descriere personala</title>
+<style>
+#back{
+background-color: #66FF99;}
+h1{
+   color:black;
+   text-align: center;
+font-size: 50px;
+}
+table, th, td {
+  border: 1px solid black;
+}
+.poza{ 
+height:240px;
+width:200px;
+ margin-right: 20px;
+margin-top:40px;
+float:left;
+  position: relative;
+  width: 15%;
+}
+#parametri{
+height:30px;
+width:100px;
+margin:20px;
+padding:10px;
+padding-right:15px;
+ font-size: 20px;
+}
+h2{
+font-size: 40px;
+font-family: serif;
+color: black;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+<body id="back">
+<h1 id="numeProfil">Descriere</h1>
+<div class="poza">
+<img id="pozaProfil" src="imagini/img.jpg" width="200" height="240">
+  </div>
+<br>
+<h2>Gogoasa Dimitriana</h2>
+<p>Student UTCN</p>
+<p>dimitra.gogoasa@mail.ru</p>
+
+<p><B>"In definitiv, nu anii din viata sunt cei care conteaza, ci viata din anii tai." - Abraham Lincoln</B></p><br><br>
+<div id="parametri">
+<p id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">1999</p> </div>
+<button onclick="VeziViitor()">Alta viata</button>
+<h2 id="tabelEducatie">Discipline</h2>
+<table style="width:70%">
+  <tr>
+    <th>Denumirea disciplinei</th>
+    <th>Anul de studiu</th> 
+<th>Link catre descrierea acestora</th>
+  </tr>
+  <tr>
+    <td>.Programarea calculatoarelor si limbaje de programare </td>
+    <td><center>I</center</td>
+<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/11.pdf">Fisa disciplinei</td>
+  </tr>
+  <tr>
+    <td>Microunde</td>
+    <td><center>II</center</td>
+<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/25.pdf">Fisa disciplinei</td>
+  </tr>
+  <tr>
+    <td> Bazele sistemelor de achizitii de date</td>
+    <td><center>III</center</td>
+<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/36.pdf">Fisa disciplinei</td>
+  </tr>
+<tr>
+    <td> Microcontrolere</td>
+    <td><center>III</center</td>
+<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/43.pdf">Fisa disciplinei</td>
+  </tr>
+</table>
+<dl>
+  <dt>Hobby-uri:</dt>
+  <dd>-dansuri </dd>
+  <dd>- volei</dd>
+ <dd>-plimbari </dd>
+  <dd>- citit</dd>
+
+</dl>
+</head>
+</body>
+</html>
